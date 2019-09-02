@@ -21,6 +21,24 @@ it('Name to be set !!', () => {
   });
 });
 
+it('Should Return Add Async' , (done) => {
+  utils.asyncAdd(10, 20 , (sum) => {
+    expect(sum).toBe(30).toBeA('number');
+    done();
+  });
+});
+
+it('Should return Async Sqaure', (done) => {
+  utils.asyncSquare(10 , (square) => {
+    expect(square).toBe(100).toBeA('number');
+    done();
+  });
+});
+
+
+
+
+
 //  expect(result).toNotBe(84).toBeA('number');
 // expect(result).toNotBe(84).toBeA('string');
 // expect(arr).toExclude(1);
