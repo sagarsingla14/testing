@@ -7,6 +7,7 @@ it('Should add two numbers',() => {
   expect(result).toBe(84).toBeA('number');
 });
 
+
 it('Should Square Two numbers',() => {
   var res = utils.square(18);
 });
@@ -21,12 +22,14 @@ it('Name to be set !!', () => {
   });
 });
 
+
 it('Should Return Add Async' , (done) => {
   utils.asyncAdd(10, 20 , (sum) => {
     expect(sum).toBe(30).toBeA('number');
     done();
   });
 });
+
 
 it('Should return Async Sqaure', (done) => {
   utils.asyncSquare(10 , (square) => {
