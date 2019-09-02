@@ -7,7 +7,6 @@ app.get('/' , (req,res) => {
     name : 'Todo App v1.0'
   });
 });
-
 app.get('/about', (req,res) => {
   var users = [{
     name: 'Sagar',

@@ -1,42 +1,55 @@
 const expect = require('expect');
 const utils = require('./utils.js');
 
+describe('add', () => {
 
-it('Should add two numbers',() => {
-  var result = utils.add(40,44);
-  expect(result).toBe(84).toBeA('number');
-});
-
-
-it('Should Square Two numbers',() => {
-  var res = utils.square(18);
-});
-
-
-it('Name to be set !!', () => {
-  var user = {Place: 'Delhi',Age: 20};
-  var result = utils.setName(user,'Sagar Singla');
-  expect(result).toInclude({
-    firstName : "Sagar",
-    secondName : "Singla"
+  it('Should add two numbers',() => {
+    var result = utils.add(40,44);
+    expect(result).toBe(84).toBeA('number');
   });
-});
 
-
-it('Should Return Add Async' , (done) => {
-  utils.asyncAdd(10, 20 , (sum) => {
-    expect(sum).toBe(30).toBeA('number');
-    done();
+  it('Should Return Add Async' , (done) => {
+    utils.asyncAdd(10, 20 , (sum) => {
+      expect(sum).toBe(30).toBeA('number');
+      done();
+    });
   });
+
 });
 
+describe('Sqauare' , () => {
 
-it('Should return Async Sqaure', (done) => {
-  utils.asyncSquare(10 , (square) => {
-    expect(square).toBe(100).toBeA('number');
-    done();
+  it('Should Square Two numbers',() => {
+    var res = utils.square(18);
   });
+
+
+  it('Should return Async Sqaure', (done) => {
+    utils.asyncSquare(10 , (square) => {
+      expect(square).toBe(100).toBeA('number');
+      done();
+    });
+  });
+
 });
+
+
+describe('Play', () => {
+
+  it('Name to be set !!', () => {
+    var user = {Place: 'Delhi',Age: 20};
+    var result = utils.setName(user,'Sagar Singla');
+    expect(result).toInclude({
+      firstName : "Sagar",
+      secondName : "Singla"
+    });
+  });
+
+});
+
+
+
+
 
 
 
