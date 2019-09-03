@@ -9,7 +9,7 @@ describe('add', () => {
   });
 
   it('Should Return Add Async' , (done) => {
-    utils.asyncAdd(10, 20 , (sum) => {
+    utils.asyncAdd(10 , 20 , (sum) => {
       expect(sum).toBe(30).toBeA('number');
       done();
     });

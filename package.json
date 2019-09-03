@@ -12,6 +12,7 @@
   "devDependencies": {
     "expect": "^1.20.2",
     "mocha": "^6.0.0",
+    "rewire": "^4.0.1",
     "supertest": "^4.0.2"
   },
   "dependencies": {
