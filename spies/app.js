@@ -12,4 +12,5 @@ module.exports.handleSignUp = (email, password) => {
       email : email,
       password : password
   });
+  
 };

@@ -14,4 +14,4 @@ it('Finding me in friends !', (done) => {
     })
   })
   .end(done);
-}); 
+});

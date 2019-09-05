@@ -27,6 +27,7 @@ describe('App Test', () => {
 
   var email = 'sagarrock1499@gmail.com';
   var password = '************';
+
   app.handleSignUp(email,password);
   it('Should Call Save User with user object', () => {
     expect(toCheck.saveUser).toHaveBeenCalled();

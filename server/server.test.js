@@ -15,7 +15,9 @@ describe('Server', () => {
     .end(done);
   });
 });
-describe('Users', () => {
+
+
+// describe('Users', () => {
   it('Finding me in friends !', (done) => {
     request(app)
     .get('/about')
@@ -28,4 +30,4 @@ describe('Users', () => {
     })
     .end(done);
   });
-});
+// });
